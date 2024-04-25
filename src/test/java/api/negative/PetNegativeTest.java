@@ -21,7 +21,7 @@ public class PetNegativeTest {
 
 	@Test(groups = { "TC11", "negative" })
 	public void TC11_testDeletePetWithoutValidPetId() {
-		String petId = "123";
+		String petId = "123abc123";
 
 		Response response = PetRequests.deletePetByID(petId, StatusCode.NOT_FOUND);
 
